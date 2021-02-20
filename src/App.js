@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import { Picker } from "./components/Picker";
 import './App.css';
+import { SelectedCategoryProvider } from "./context/selectedCategory-context";
+import { PictureMenu } from "./components/PictureMenu";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SelectedCategoryProvider>
+      <Picker />
+      <PictureMenu />
+      </SelectedCategoryProvider>
     </div>
   );
 }
