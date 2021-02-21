@@ -1,7 +1,7 @@
 # Background Image Picker
 
 ### Scope of project
-A simple Raect application that displays pictures of different categories when category buttons are pressed
+A simple React application that displays pictures of different categories when category buttons are pressed
 
 Build using React and React hooks
 
